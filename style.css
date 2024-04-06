@@ -1,0 +1,122 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#allcontainer {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 15% 85%;
+}
+
+.sidebar {
+    grid-area: 2 / 1 / -1 / 2;
+    background-color: #713e12d8;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.formpart {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.formpart input {
+    max-width: 100%;
+}
+
+.sidebar > p {
+    font-size: 20px;
+    margin-bottom: 25%;
+}
+
+.sidebar > p,
+label {
+    color: white;
+    font-weight: bold;
+}
+
+.check {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 20%;
+}
+
+#addbutton {
+    margin-left: 20%;
+    flex: 1;
+}
+
+.header {
+    grid-area: 1 / 1 / 2 / 3;
+    background-color: #3f6212be;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#bookscontainer {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-content: flex-start;
+    
+}
